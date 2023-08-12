@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AtividadeFormulario</title>
+</head>
+<body>
+    <h1>EVENTO DE TECNOLOGIA DA KENZIE</h1>
+    <H2>CADASTRE-SE</H2>
+    <form>
+        <div>
+            <label for="nome">Nome</label> 
+            <input type="text" name="Nome"  id="Nome" required="" placeholder="Digite seu nome aqui"/>
+            <label for="Email">E-mail</label> 
+            <input type="mail" name="Email" id="Email" required="" placeholder="Digite seu e-mail aqui"/>
+        </div>
+        <div>   
+            <label for="motivo">Descreva o motivo de sua participação em nosso curso </label>
+            <textarea name="motivo" id="motivo" cols="30" rows="10" placeholder="Descreva aqui..."></textarea>
+        </div>    
+        <div>
+            <p>Selecione o módulo desejado</p>
+            <select name="módulo">
+                <option value="">Escolher Módulo</option>
+                <option value="">Módulo 1</option>
+                <option value="">Módulo 2</option>
+                <option value="">Módulo 3</option>
+            </select>
+        </div>
+        <div>
+            <p>Cadastre uma senha - Máximo 8 dígitos</p>
+            <label for="senha">Senha</label>
+            <input type="password" maxlength="8" placeholder="Digite uma senha" id="senha">
+            <label for="ConfSenha">Confirmação de Senha</label>
+            <input type="password" maxlength="8" placeholder="Confirme a senha" id="ConfSenha">
+        </div>
+            <p>Deseja receber novidades do curso em seu e-mail?</p>
+            <label for="Sim">Sim</label>
+            <input type="radio" name="novidades" id="Sim">
+            <label for="Não">Não</label>
+            <input type="radio" name="novidades" id="Não">
+        </div>
+        <button type="submit">Enviar Formulário</button>
+    </form>
+</body>
+</html>
